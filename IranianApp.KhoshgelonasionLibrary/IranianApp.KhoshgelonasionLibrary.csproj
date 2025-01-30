@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Khoshgelonasion.Console</Title>
+    <Authors>AbolfazlShabani</Authors>
+    <Product>persian tools</Product>
+    <Description>simple app for create table and menu generator</Description>
+    <Copyright>MIT</Copyright>
+  </PropertyGroup>
+
+</Project>
