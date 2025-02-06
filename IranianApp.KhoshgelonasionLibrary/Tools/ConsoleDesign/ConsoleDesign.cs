@@ -84,5 +84,45 @@ using System.Linq;
                 return input;
             }
         }
-    }
+
+        // دریافت لیستی از اعداد یا رشته‌ها از کاربر
+        public static List<object> GetListInput(string message, bool isNumeric = true)
+        {
+            List<object> inputs = new List<object>();
+            Console.WriteLine($"║ {message} (Enter 'done' to finish)");
+
+            while (true)
+            {
+                Console.Write("║ Enter value: ");
+                string userInput = Console.ReadLine();
+
+                if (userInput.ToLower() == "done")
+                    break;
+
+                if (isNumeric)
+                {
+                    if (int.TryParse(userInput, out int number))
+                    {
+                        inputs.Add(number);
+                    }
+                    else
+                    {
+                        Console.WriteLine("║ Invalid input! Please enter a valid number.");
+                    }
+                }
+                else
+                {
+                    if (!string.IsNullOrEmpty(userInput))
+                    {
+                        inputs.Add(userInput);
+                    }
+                    else
+                    {
+                        Console.WriteLine("║ Input cannot be empty!");
+                    }
+                }
+            }
+            return inputs;
+        }
+}
 

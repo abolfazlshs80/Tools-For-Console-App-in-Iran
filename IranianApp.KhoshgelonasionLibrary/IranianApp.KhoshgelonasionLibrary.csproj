@@ -5,13 +5,29 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Khoshgelonasion.Console</Title>
+    <Title>Khoshgelonasion.DynamicConsoleUtils</Title>
     <Authors>AbolfazlShabani</Authors>
     <Product>Dynamic Console Utils </Product>
     <Description>simple app for create table and menu generator</Description>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl>https://github.com/abolfazlshs80/Tools-For-Console-App-in-Iran</PackageProjectUrl>
     <RepositoryUrl>https://github.com/abolfazlshs80/Tools-For-Console-App-in-Iran</RepositoryUrl>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\abolfazl\Desktop\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="License.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
